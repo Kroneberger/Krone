@@ -1,0 +1,209 @@
+/* SECCION PAGINA GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+html {
+    background: linear-gradient(120deg, #0f1b23, #234, #3b4b5b, #2a3a4a, #1a2a3a);
+    color: #dde;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: aparecerBody 1600ms ease-in-out;
+}
+
+@keyframes aparecerBody {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+/* SECCION DEL header */
+
+header {
+    width: 100%;
+    padding-bottom: 10vh;
+}
+
+h1 {
+    color: #222;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+nav{
+    background-color: #345b;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px 0;
+    border-bottom: 3px solid #234;
+    backdrop-filter: blur(10px);
+    z-index: 300;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1.05em;
+}
+
+a {
+    text-decoration: none;
+    color: #b9bace;
+    text-shadow: none;
+    transition: color 300ms ease,
+                text-shadow 300ms ease;
+
+}
+
+a:hover {
+    color: #dfdffe;
+    text-shadow: 0 0 2px #bbcc;
+}
+
+
+/* SECCION DEL MAIN */
+
+main {
+    flex: 1;
+}
+
+
+
+/* ------------- SECCION DEL FOOTER -------------*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(330deg, #2a2b2a, #39393c, #2a2a2a);
+    height: 20vh; 
+    color: #aaa;
+    align-items: center;
+    margin-top: 10vh;
+    border-top: 2px #0f1b23 solid;
+    width: 100%;
+}
+
+
+
+.footer__principal {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    gap: 25px;
+    width: 70%;
+    max-width: 800px;
+}
+
+.footer__conteiner {
+    flex-direction: column;
+    gap: 0;
+}
+
+
+.footer__conteiner p{
+    font-weight: 300;
+    color: #999;
+    font-size: 0.92em;
+    margin-left: 4px;
+}
+
+.footer__conteiner p:hover {
+    text-shadow: 0 0 1px #4bfa;
+    cursor: pointer;
+}
+
+footer h5 {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    font-size: 1.07em;
+}
+
+.fondo__footer {
+    background: #232323;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    color: #999;
+    font-weight: 300;
+    font-size: 0.92em;
+}
+
+/*
+.hernankroneberger {
+    font-weight: 200;
+    font-size: 1.1em;
+    letter-spacing: 10%;
+    width: 50vw;
+    color: #bbb;
+}*/
+
+/* ---------------------------------------*/
+
+
+/* ------------- BOTON DE VOLVER A INICIO (SECUNDARIAS) ------------- */
+
+div a, .volver_a_inicio{
+    background: #222a3a;
+    border: none;
+    text-wrap: none;
+    color: #bdbfce;
+    padding: 8px 12px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    text-transform: uppercase;
+    border: 1px solid #bbc;
+    transition: background-color 200ms ease-in-out,
+                color 200ms ease-in-out,
+                text-shadow 200ms ease-in-out,
+                border 200ms ease-in-out;
+}
+
+div a, .volver_a_inicio{
+    max-width: 80%;
+    font-size: clamp(0.72em, 2vw, 18px); /* clamp()Lo que hace es ajustarnos el font-size. funciona asi clamp(minimo, preferido, maximo) */
+
+}
+
+div a:hover{
+    background: #2f3441;
+    cursor: pointer;
+    color: #dfdffe;
+    text-shadow: 0 0 2px #bbcc;
+    border: 1px solid #dde;
+}
+
+.volver_a_inicio {
+    border: 1px #aaca solid;
+    transition: border 200ms ease-in-out,
+                background-color 200ms ease-in-out
+                color 200ms ease-in-out,
+                text-shadow 200ms ease-in-out;
+}
+
+.volver_a_inicio:hover {
+    background: #2f3441;
+    cursor: pointer;
+    color: #dfdffe;
+    text-shadow: 0 0 2px #bbcc;
+    border: 1px #aacc solid;
+}
+
+
+/* --------------------------------------- */
